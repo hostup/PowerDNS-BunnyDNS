@@ -1,6 +1,6 @@
 # BunnyDNS - PostgreSQL (PowerDNS) Synchronization
 
-This script synchronizes DNS records from a PowerDNS instance using a PostgreSQL backend to Bunny.net's DNS service. If you're using PowerDNS with PostgreSQL and wish to mirror your DNS records to Bunny.net, this script is for you.
+This script synchronizes DNS zones / records from a PowerDNS instance using a PostgreSQL backend to Bunny.net's DNS service. If you're using PowerDNS with PostgreSQL and wish to mirror your DNS records to Bunny.net, this script is for you.
 
 ## Prerequisites
 - PHP
@@ -50,7 +50,7 @@ As the script runs, it will:
 
 1. Retrieve all the domains from Bunny.net.
 2. Pull all domain records from the PowerDNS instance on PostgreSQL.
-3. Match and synchronize records from PostgreSQL to Bunny.net.
+3. Match and synchronize DNS records / zones from PostgreSQL to Bunny.net.
 
 Real-time feedback is provided for actions taken, such as processing domains, skipping existing records, and any errors encountered.
 
